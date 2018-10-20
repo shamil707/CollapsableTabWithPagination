@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PickerView" customModule="CollapsableTabOnNavView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPc-aH-68z" userLabel="FlagView">
+                    <rect key="frame" x="0.0" y="0.0" width="72" height="69"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhf-e4-MTE" userLabel="CountryCodeView">
+                    <rect key="frame" x="72" y="0.0" width="108" height="69"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uPK-TB-g4E">
+                            <rect key="frame" x="0.0" y="0.0" width="108" height="69"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SGD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op2-1d-e93">
+                                    <rect key="frame" x="0.0" y="0.0" width="108" height="34.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singapore Dollar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZN-R0-KJx">
+                                    <rect key="frame" x="0.0" y="34.5" width="108" height="34.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uPK-TB-g4E" firstAttribute="leading" secondItem="Bhf-e4-MTE" secondAttribute="leading" id="EVb-7o-c5i"/>
+                        <constraint firstItem="uPK-TB-g4E" firstAttribute="top" secondItem="Bhf-e4-MTE" secondAttribute="top" id="FjZ-2b-ijU"/>
+                        <constraint firstAttribute="trailing" secondItem="uPK-TB-g4E" secondAttribute="trailing" id="dHb-HK-7rQ"/>
+                        <constraint firstAttribute="bottom" secondItem="uPK-TB-g4E" secondAttribute="bottom" id="g2H-Eu-7BW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.27324383169999999" blue="0.22476106700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Bhf-e4-MTE" firstAttribute="leading" secondItem="PPc-aH-68z" secondAttribute="trailing" id="0g8-V7-GbK"/>
+                <constraint firstItem="Bhf-e4-MTE" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="61u-Sm-Ktk"/>
+                <constraint firstItem="Bhf-e4-MTE" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6FE-Gb-RBE"/>
+                <constraint firstItem="PPc-aH-68z" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="HJa-sI-Ydy"/>
+                <constraint firstItem="PPc-aH-68z" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Uvf-jm-6WD"/>
+                <constraint firstItem="PPc-aH-68z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dau-tg-9Sf"/>
+                <constraint firstItem="PPc-aH-68z" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="k68-CJ-9rS"/>
+                <constraint firstItem="Bhf-e4-MTE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ooK-SO-hLV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-1" y="99.5"/>
+        </view>
+    </objects>
+</document>
